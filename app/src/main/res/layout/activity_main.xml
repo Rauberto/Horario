@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <ImageView
+            android:src="@drawable/leer"
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:onClick="leerQr" />
+
+        <ImageView
+            android:src="@drawable/generaroff"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="40px"
+            android:paddingLeft="10px"
+            android:paddingRight="40px"
+            android:paddingTop="20px" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <ImageView
+            android:src="@drawable/horario"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:onClick="botonHorario" />
+
+        <ImageView
+            android:src="@drawable/borrar"
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="40px"
+            android:paddingLeft="10px"
+            android:paddingRight="40px"
+            android:paddingTop="20px"
+            android:onClick="botonBorrar" />
+
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/exportar2"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="exportarHorario"
+        android:layout_marginTop="50px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:layout_gravity="center" />
+
+    <!--<Button-->
+        <!--android:id="@+id/lista"-->
+        <!--style="android:buttonStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minWidth="64dip"-->
+        <!--android:onClick="leerQr"-->
+        <!--android:text="Leer QR" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="crearQr"-->
+        <!--android:text="Generar QR" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="botonHorario"-->
+        <!--android:text="Horario" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_borrar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="botonBorrar"-->
+        <!--android:text="Borrar Asignatura" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="exportarHorario"-->
+        <!--android:text="Exportar Horario" />-->
+
+</LinearLayout>
